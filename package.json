@@ -1,9 +1,9 @@
 {
-  "name": "@hexlet/nodejs-package",
-  "version": "0.0.3",
-  "description": "Node.js boilerplate package",
+  "name": "@hexlet/brain-games",
+  "version": "0.0.1",
+  "description": "Brain games Hexlet",
   "bin": {
-    "hexlet": "bin/nodejs-package.js"
+    "hexlet": "bin/brain-games.js"
   },
   "engines": {
     "node": ">=14"
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/hexlet-boilerplates/nodejs-package.git"
   },
-  "author": "Kirill Mokevnin",
+  "author": "Rail Sakhaviev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hexlet-boilerplates/nodejs-package/issues"
