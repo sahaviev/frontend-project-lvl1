@@ -1,6 +1,6 @@
 {
   "name": "hexlet-brain-games-rail",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Brain games Rail Sakhaviev",
   "bin": {
     "brain-games-rail": "bin/brain-games.js"
