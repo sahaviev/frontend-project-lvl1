@@ -2,6 +2,4 @@
 
 import { greetings } from '../index.js';
 
-console.log('Welcome to the Brain Games!');
-
 greetings();
