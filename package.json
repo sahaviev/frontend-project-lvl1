@@ -1,9 +1,9 @@
 {
-  "name": "@hexlet/brain-games",
+  "name": "hexlet-brain-games-rail",
   "version": "0.0.1",
-  "description": "Brain games Hexlet",
+  "description": "Brain games Rail Sakhaviev",
   "bin": {
-    "hexlet": "bin/brain-games.js"
+    "brain-games-rail": "bin/brain-games.js"
   },
   "engines": {
     "node": ">=14"
@@ -13,30 +13,33 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hexlet-boilerplates/nodejs-package.git"
+    "url": "git+https://github.com/sahaviev/frontend-project-lvl1.git"
   },
   "author": "Rail Sakhaviev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hexlet-boilerplates/nodejs-package/issues"
+    "url": "https://github.com/sahaviev/frontend-project-lvl1/issues"
   },
   "type": "module",
   "jest": {
     "testEnvironment": "node",
     "transform": {}
   },
-  "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
+  "homepage": "https://github.com/sahaviev/frontend-project-lvl1#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
-    "debug": "^4.2.0",
-    "lodash": "^4.17.20"
+    "debug": "4.2.0",
+    "lodash": "4.17.20"
   },
   "devDependencies": {
-    "@jest/globals": "^26.4.2",
-    "eslint": "^7.9.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^24.0.2",
-    "jest": "^26.4.2",
-    "jest-cli": "^26.4.2"
+    "@jest/globals": "26.4.2",
+    "eslint": "7.9.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "24.0.2",
+    "jest": "26.4.2",
+    "jest-cli": "26.4.2"
   }
 }
