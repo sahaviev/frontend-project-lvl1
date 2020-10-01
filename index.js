@@ -1,5 +1,4 @@
 // @ts-check
 
-import half from './src/half.js';
-
-export default half;
+// eslint-disable-next-line import/named,import/prefer-default-export
+export { greetings } from './src/cli.js';

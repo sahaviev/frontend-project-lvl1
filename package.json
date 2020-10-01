@@ -31,7 +31,8 @@
   },
   "dependencies": {
     "debug": "4.2.0",
-    "lodash": "4.17.20"
+    "lodash": "4.17.20",
+    "promptly": "3.0.3"
   },
   "devDependencies": {
     "@jest/globals": "26.4.2",
