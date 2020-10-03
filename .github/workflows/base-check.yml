@@ -1,4 +1,4 @@
-name: hexlet-check
+name: Base check
 
 on:
   push:
@@ -9,12 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      #- name: Hexlet project check
-      #  uses: hexlet/project-action@release
+      - name: Install dependencies
+        run: |
+          npm ci
 
       - name: Run linter
-        # Run Linter
         run: |
           make lint
