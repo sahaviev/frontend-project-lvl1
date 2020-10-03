@@ -3,7 +3,8 @@
   "version": "0.0.2",
   "description": "Brain games Rail Sakhaviev",
   "bin": {
-    "brain-games-rail": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "engines": {
     "node": ">=14"
