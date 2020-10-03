@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-import { greetings, brainEvenGame } from '../index.js';
+import { brainEvenGame } from '../index.js';
 
-async function brainEven() {
-  const name = await greetings();
-  await brainEvenGame(name);
-}
-
-brainEven();
+brainEvenGame()
+  .catch((error) => {
+    console.log('brain-even.js: something went wrong');
+    console.error(error);
+  });
