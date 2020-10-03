@@ -1,6 +1,6 @@
 import promptly from 'promptly';
 import { getRandomNumber, getRandomElement } from '../utils.js';
-import { engine } from './engine';
+import { engine } from './engine.js';
 
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 100;
