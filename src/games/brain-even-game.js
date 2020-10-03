@@ -1,6 +1,6 @@
 import promptly from 'promptly';
 
-import { getRandomNumber, isEven } from '../utils';
+import { getRandomNumber, isEven } from '../utils.js';
 
 const MAX_ANSWERS_COUNT = 3;
 const MIN_RANDOM_NUMBER = 1;
@@ -29,6 +29,7 @@ function checkAnswer(number, answer) {
     return false;
   }
 
+  console.log('Correct!');
   return true;
 }
 
@@ -44,13 +45,11 @@ export const brainEvenGame = async (name) => {
     // eslint-disable-next-line no-await-in-loop
     const answer = await promptly.prompt('Your answer: ');
 
-    if (checkAnswer(number, answer)) {
-      console.log('Correct!');
-      answersCount += 1;
-    } else {
+    if (!checkAnswer(number, answer)) {
       console.log(`Let's try again, ${name}!`);
       return;
     }
+    answersCount += 1;
   }
 
   console.log(`Congratulations, ${name}!`);
