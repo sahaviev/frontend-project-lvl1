@@ -1,27 +1,30 @@
 import promptly from 'promptly';
 
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
+import { getRandomNumber, isEven } from '../utils';
 
-function isEven(number) {
-  return number % 2 === 0;
-}
+const MAX_ANSWERS_COUNT = 3;
+const MIN_RANDOM_NUMBER = 1;
+const MAX_RANDOM_NUMBER = 100;
+
+const Answer = {
+  YES: 'yes',
+  NO: 'no',
+};
 
 function checkAnswer(number, answer) {
   const even = isEven(number);
 
-  if (answer !== 'yes' && answer !== 'no') {
+  if (answer !== Answer.YES && answer !== Answer.NO) {
     console.log(`'${answer}' is wrong answer ;(.`);
     return false;
   }
 
-  if (!even && answer === 'yes') {
+  if (!even && answer === Answer.YES) {
     console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'.');
     return false;
   }
 
-  if (even && answer === 'no') {
+  if (even && answer === Answer.NO) {
     console.log('\'no\' is wrong answer ;(. Correct answer was \'yes\'.');
     return false;
   }
@@ -30,12 +33,12 @@ function checkAnswer(number, answer) {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export const evenGame = async (name) => {
+export const brainEvenGame = async (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let answersCount = 0;
-  while (answersCount < 3) {
-    const number = getRandomNumber(1, 100);
+  while (answersCount < MAX_ANSWERS_COUNT) {
+    const number = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
     console.log(`Question: ${number}`);
 
     // eslint-disable-next-line no-await-in-loop
