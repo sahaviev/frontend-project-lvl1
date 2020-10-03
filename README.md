@@ -1,3 +1,6 @@
+### Example of brain-even game
+[![asciicast](https://asciinema.org/a/363307.svg)](https://asciinema.org/a/363307)
+
 ### Hexlet tests and linter status:
 ![Actions Status](https://github.com/sahaviev/frontend-project-lvl1/workflows/Base%20check/badge.svg)
 
