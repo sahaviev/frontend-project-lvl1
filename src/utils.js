@@ -12,3 +12,10 @@ export function getRandomElement(array) {
 export function isEven(number) {
   return number % 2 === 0;
 }
+
+export function gcd(a, b) {
+  if (!b) {
+    return a;
+  }
+  return gcd(b, a % b);
+}
