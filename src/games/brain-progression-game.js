@@ -1,5 +1,5 @@
 import { engine } from './engine.js';
-import { getRandomNumber } from '../utils.js';
+import { getRandomNumber, range } from '../utils.js';
 
 const PROGRESSION_START_MIN = 0;
 const PROGRESSION_START_MAX = 30;
@@ -7,10 +7,6 @@ const PROGRESSION_MIN_STEP = 2;
 const PROGRESSION_MAX_STEP = 5;
 const PROGRESSION_MIN_LENGTH = 5;
 const PROGRESSION_MAX_LENGTH = 15;
-
-function range(size, startAt = 0, step = 1) {
-  return [...Array(size).keys()].map((i) => i * step + startAt);
-}
 
 async function askQuestion() {
   const start = getRandomNumber(PROGRESSION_START_MIN, PROGRESSION_START_MAX);

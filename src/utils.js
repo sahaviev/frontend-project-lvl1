@@ -13,9 +13,22 @@ export function isEven(number) {
   return number % 2 === 0;
 }
 
+export function isPrime(number) {
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return number > 1;
+}
+
 export function gcd(a, b) {
   if (!b) {
     return a;
   }
   return gcd(b, a % b);
+}
+
+export function range(size, startAt = 0, step = 1) {
+  return [...Array(size).keys()].map((i) => i * step + startAt);
 }
