@@ -20,7 +20,7 @@ export async function engine(title, askQuestion) {
     // eslint-disable-next-line no-await-in-loop,no-unused-vars
     const userAnswer = await promptly.prompt('Your answer: ');
 
-    if (userAnswer !== answer) {
+    if (userAnswer !== answer.toString()) {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}`);
       console.log(`Let's try again, ${name}!`);
       return;
