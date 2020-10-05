@@ -12,12 +12,11 @@ export async function engine(title, askQuestion) {
 
   let games = 0;
   while (games < MAX_GAMES_COUNT) {
-    // eslint-disable-next-line no-await-in-loop
-    const { question, answer } = await askQuestion();
+    const { question, answer } = askQuestion();
 
     console.log(`Question: ${question}`);
 
-    // eslint-disable-next-line no-await-in-loop,no-unused-vars
+    // eslint-disable-next-line no-await-in-loop
     const userAnswer = await promptly.prompt('Your answer: ');
 
     if (userAnswer !== answer.toString()) {
