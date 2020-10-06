@@ -7,17 +7,17 @@ export const Answer = {
   NO: 'no',
 };
 
-const MAX_GAMES_COUNT = 3;
+const MAX_QUESTIONS_COUNT = 3;
 
 // eslint-disable-next-line import/prefer-default-export
-export async function engine(title, askQuestion) {
+export async function engine(title, getQuestion) {
   const name = await greetings();
 
   console.log(title);
 
-  let games = 0;
-  while (games < MAX_GAMES_COUNT) {
-    const { question, answer } = askQuestion();
+  let questions = 0;
+  while (questions < MAX_QUESTIONS_COUNT) {
+    const { question, answer } = getQuestion();
 
     console.log(`Question: ${question}`);
 
@@ -31,7 +31,7 @@ export async function engine(title, askQuestion) {
     }
 
     console.log('Correct!');
-    games += 1;
+    questions += 1;
   }
 
   console.log(`Congratulations, ${name}!`);

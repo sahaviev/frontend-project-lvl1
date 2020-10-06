@@ -22,12 +22,12 @@ const MathFunctions = {
   [Operation.MULTIPLICATION](x, y) { return x * y; },
 };
 
-function askQuestion() {
+function getQuestion() {
   const number1 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const number2 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const operation = getRandomElement(operations);
   const question = `Question: ${number1} ${operation} ${number2}`;
-  const answer = MathFunctions[operation](number1, number2).toString();
+  const answer = MathFunctions[operation](number1, number2);
   return {
     question, answer,
   };
@@ -35,5 +35,5 @@ function askQuestion() {
 
 // eslint-disable-next-line import/prefer-default-export
 export async function brainCalcGame() {
-  await engine('What is the result of the expression?', askQuestion);
+  await engine('What is the result of the expression?', getQuestion);
 }

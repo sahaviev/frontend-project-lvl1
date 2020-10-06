@@ -8,7 +8,7 @@ const PROGRESSION_MAX_STEP = 5;
 const PROGRESSION_MIN_LENGTH = 5;
 const PROGRESSION_MAX_LENGTH = 15;
 
-function askQuestion() {
+function getQuestion() {
   const start = getRandomNumber(PROGRESSION_START_MIN, PROGRESSION_START_MAX);
   const size = getRandomNumber(PROGRESSION_MIN_LENGTH, PROGRESSION_MAX_LENGTH);
   const step = getRandomNumber(PROGRESSION_MIN_STEP, PROGRESSION_MAX_STEP);
@@ -22,5 +22,5 @@ function askQuestion() {
 
 // eslint-disable-next-line import/prefer-default-export
 export async function brainProgressionGame() {
-  await engine('What number is missing in the progression?', askQuestion);
+  await engine('What number is missing in the progression?', getQuestion);
 }
