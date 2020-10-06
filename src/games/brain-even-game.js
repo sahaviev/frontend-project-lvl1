@@ -6,9 +6,8 @@ const MAX_RANDOM_NUMBER = 100;
 
 function getQuestion() {
   const number = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
-  const question = `Question: ${number}`;
   const answer = isEven(number) ? Answer.YES : Answer.NO;
-  return { question, answer };
+  return { question: number, answer };
 }
 
 // eslint-disable-next-line import/prefer-default-export

@@ -16,7 +16,7 @@ function getQuestion() {
   const progression = range(size, start, step);
   const answer = progression[hidden];
   progression[hidden] = '..';
-  const question = `Question: ${progression.toString()}`;
+  const question = progression.toString();
   return { question, answer };
 }
 

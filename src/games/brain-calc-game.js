@@ -26,8 +26,8 @@ function getQuestion() {
   const number1 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const number2 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const operation = getRandomElement(operations);
-  const question = `Question: ${number1} ${operation} ${number2}`;
   const answer = MathFunctions[operation](number1, number2);
+  const question = `${number1} ${operation} ${number2}`;
   return {
     question, answer,
   };

@@ -7,8 +7,8 @@ const MAX_RANDOM_NUMBER = 100;
 function getQuestion() {
   const number1 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const number2 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
-  const question = `Question: ${number1} ${number2}`;
   const answer = gcd(number1, number2);
+  const question = `${number1} ${number2}`;
   return { question, answer };
 }
 
