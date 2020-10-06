@@ -2,6 +2,11 @@ import promptly from 'promptly';
 
 import { greetings } from '../cli.js';
 
+export const Answer = {
+  YES: 'yes',
+  NO: 'no',
+};
+
 const MAX_GAMES_COUNT = 3;
 
 // eslint-disable-next-line import/prefer-default-export

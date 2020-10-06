@@ -1,13 +1,8 @@
-import { engine } from './engine.js';
+import { engine, Answer } from './engine.js';
 import { getRandomNumber, isPrime } from '../utils.js';
 
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 1000;
-
-const Answer = {
-  YES: 'yes',
-  NO: 'no',
-};
 
 async function askQuestion() {
   const number = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
