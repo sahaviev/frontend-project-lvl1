@@ -22,7 +22,7 @@ const MathFunctions = {
   [Operation.MULTIPLICATION](x, y) { return x * y; },
 };
 
-async function askQuestion() {
+function askQuestion() {
   const number1 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const number2 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const operation = getRandomElement(operations);

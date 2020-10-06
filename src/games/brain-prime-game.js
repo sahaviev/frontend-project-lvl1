@@ -4,7 +4,7 @@ import { getRandomNumber, isPrime } from '../utils.js';
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 1000;
 
-async function askQuestion() {
+function askQuestion() {
   const number = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const question = `Question: ${number}`;
   const answer = isPrime(number) ? Answer.YES : Answer.NO;

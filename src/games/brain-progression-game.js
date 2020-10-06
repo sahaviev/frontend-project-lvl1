@@ -8,7 +8,7 @@ const PROGRESSION_MAX_STEP = 5;
 const PROGRESSION_MIN_LENGTH = 5;
 const PROGRESSION_MAX_LENGTH = 15;
 
-async function askQuestion() {
+function askQuestion() {
   const start = getRandomNumber(PROGRESSION_START_MIN, PROGRESSION_START_MAX);
   const size = getRandomNumber(PROGRESSION_MIN_LENGTH, PROGRESSION_MAX_LENGTH);
   const step = getRandomNumber(PROGRESSION_MIN_STEP, PROGRESSION_MAX_STEP);
@@ -17,9 +17,7 @@ async function askQuestion() {
   const answer = progression[hidden];
   progression[hidden] = '..';
   const question = `Question: ${progression.toString()}`;
-  return {
-    question, answer,
-  };
+  return { question, answer };
 }
 
 // eslint-disable-next-line import/prefer-default-export

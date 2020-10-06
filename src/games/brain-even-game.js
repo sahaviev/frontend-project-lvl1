@@ -4,7 +4,7 @@ import { getRandomNumber, isEven } from '../utils.js';
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 100;
 
-async function askQuestion() {
+function askQuestion() {
   const number = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const question = `Question: ${number}`;
   const answer = isEven(number) ? Answer.YES : Answer.NO;

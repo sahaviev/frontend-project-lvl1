@@ -1,9 +1,23 @@
-### ASCIINEMA example of brain games
-[![asciicast](https://asciinema.org/a/363432.svg)](https://asciinema.org/a/363432)
+# ASCIINEMA example of brain games
+### brain-even
+[![asciicast](https://asciinema.org/a/363307.svg)](https://asciinema.org/a/363307)
 
-### Hexlet tests and linter status:
+### brain-calc
+[![asciicast](https://asciinema.org/a/363358.svg)](https://asciinema.org/a/363358)
+
+### brain-gcd
+[![asciicast](https://asciinema.org/a/363770.svg)](https://asciinema.org/a/363770)
+
+### brain-progression
+[![asciicast](https://asciinema.org/a/363770.svg)](https://asciinema.org/a/363770)
+
+### brain-prime
+[![asciicast](https://asciinema.org/a/363770.svg)](https://asciinema.org/a/363770)
+
+
+## Hexlet tests and linter status:
 ![Actions Status](https://github.com/sahaviev/frontend-project-lvl1/workflows/Base%20check/badge.svg)
 
-### CodeClimate Badges:
+## CodeClimate Badges:
 [![Maintainability](https://api.codeclimate.com/v1/badges/4fd5b3779195e19dc482/maintainability)](https://codeclimate.com/github/sahaviev/frontend-project-lvl1/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4fd5b3779195e19dc482/test_coverage)](https://codeclimate.com/github/sahaviev/frontend-project-lvl1/test_coverage)
