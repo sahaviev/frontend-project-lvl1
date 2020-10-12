@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { brainEvenGame } from '../index.js';
+import { brainEvenGame } from '../src/games/brain-even-game.js';
 
 brainEvenGame()
   .catch((error) => {

@@ -35,18 +35,13 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "dependencies": {
-    "debug": "4.2.0",
-    "lodash": "4.17.20",
-    "promptly": "3.0.3"
-  },
   "devDependencies": {
-    "@jest/globals": "26.4.2",
     "eslint": "7.9.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.22.0",
-    "eslint-plugin-jest": "24.0.2",
-    "jest": "26.4.2",
-    "jest-cli": "26.4.2"
+    "eslint-plugin-jest": "24.0.2"
+  },
+  "dependencies": {
+    "promptly": "3.0.3"
   }
 }

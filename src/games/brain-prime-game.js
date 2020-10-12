@@ -1,8 +1,23 @@
-import { engine, Answer } from './engine.js';
-import { getRandomNumber, isPrime } from '../utils.js';
+import { engine, Answer } from '../engine.js';
+import { getRandomNumber } from '../utils.js';
 
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 1000;
+
+function isPrime(number) {
+  if (number <= 1) {
+    return false;
+  }
+
+  const n = number / 2;
+  for (let i = 2; i < n; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
 
 function getQuestion() {
   const number = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
@@ -10,7 +25,6 @@ function getQuestion() {
   return { question: number, answer };
 }
 
-// eslint-disable-next-line import/prefer-default-export
 export async function brainPrimeGame() {
   await engine('Answer "yes" if given number is prime. Otherwise answer "no".', getQuestion);
 }

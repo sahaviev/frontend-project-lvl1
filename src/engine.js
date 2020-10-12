@@ -1,6 +1,6 @@
 import promptly from 'promptly';
 
-import { greetings } from '../cli.js';
+import { greetings } from './cli.js';
 
 export const Answer = {
   YES: 'yes',
@@ -9,7 +9,6 @@ export const Answer = {
 
 const MAX_QUESTIONS_COUNT = 3;
 
-// eslint-disable-next-line import/prefer-default-export
 export async function engine(title, getQuestion) {
   const name = await greetings();
 
@@ -24,7 +23,7 @@ export async function engine(title, getQuestion) {
     // eslint-disable-next-line no-await-in-loop
     const userAnswer = await promptly.prompt('Your answer: ');
 
-    if (userAnswer !== answer.toString()) {
+    if (userAnswer !== answer) {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}`);
       console.log(`Let's try again, ${name}!`);
       return;

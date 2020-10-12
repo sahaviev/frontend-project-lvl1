@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { brainGcdGame } from '../index.js';
+import { brainGcdGame } from '../src/games/brain-gcd-game.js';
 
 brainGcdGame()
   .catch((error) => {
