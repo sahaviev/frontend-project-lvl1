@@ -9,14 +9,14 @@ export const Answer = {
 
 const MAX_QUESTIONS_COUNT = 3;
 
-export async function engine(title, getQuestion) {
+export async function engine(title, getQuestionAndAnswer) {
   const name = await greetings();
 
   console.log(title);
 
   let questions = 0;
   while (questions < MAX_QUESTIONS_COUNT) {
-    const { question, answer } = getQuestion();
+    const { question, answer } = getQuestionAndAnswer();
 
     console.log(`Question: ${question}`);
 

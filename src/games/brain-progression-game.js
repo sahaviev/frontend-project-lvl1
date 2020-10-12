@@ -12,7 +12,7 @@ function range(size, startAt = 0, step = 1) {
   return [...Array(size).keys()].map((i) => i * step + startAt);
 }
 
-function getQuestion() {
+function getQuestionAndAnswer() {
   const start = getRandomNumber(PROGRESSION_START_MIN, PROGRESSION_START_MAX);
   const size = getRandomNumber(PROGRESSION_MIN_LENGTH, PROGRESSION_MAX_LENGTH);
   const step = getRandomNumber(PROGRESSION_MIN_STEP, PROGRESSION_MAX_STEP);
@@ -25,5 +25,5 @@ function getQuestion() {
 }
 
 export async function brainProgressionGame() {
-  await engine('What number is missing in the progression?', getQuestion);
+  await engine('What number is missing in the progression?', getQuestionAndAnswer);
 }

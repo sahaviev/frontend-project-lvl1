@@ -19,12 +19,12 @@ function isPrime(number) {
   return true;
 }
 
-function getQuestion() {
+function getQuestionAndAnswer() {
   const number = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const answer = isPrime(number) ? Answer.YES : Answer.NO;
   return { question: number, answer };
 }
 
 export async function brainPrimeGame() {
-  await engine('Answer "yes" if given number is prime. Otherwise answer "no".', getQuestion);
+  await engine('Answer "yes" if given number is prime. Otherwise answer "no".', getQuestionAndAnswer);
 }

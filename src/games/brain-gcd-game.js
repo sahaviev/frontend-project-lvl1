@@ -11,7 +11,7 @@ function gcd(a, b) {
   return gcd(b, a % b);
 }
 
-function getQuestion() {
+function getQuestionAndAnswer() {
   const number1 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const number2 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const answer = gcd(number1, number2).toString();
@@ -20,5 +20,5 @@ function getQuestion() {
 }
 
 export async function brainGcdGame() {
-  await engine('Find the greatest common divisor of given numbers.', getQuestion);
+  await engine('Find the greatest common divisor of given numbers.', getQuestionAndAnswer);
 }

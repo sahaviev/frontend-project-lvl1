@@ -11,7 +11,7 @@ const MathFunctions = {
   '*': function (x, y) { return x * y; },
 };
 
-function getQuestion() {
+function getQuestionAndAnswer() {
   const number1 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const number2 = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
   const operation = getRandomElement(Object.keys(MathFunctions));
@@ -23,5 +23,5 @@ function getQuestion() {
 }
 
 export async function brainCalcGame() {
-  await engine('What is the result of the expression?', getQuestion);
+  await engine('What is the result of the expression?', getQuestionAndAnswer);
 }
