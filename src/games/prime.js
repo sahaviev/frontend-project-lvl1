@@ -3,14 +3,15 @@ import { getRandomNumber } from '../utils.js';
 
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 1000;
+const GAME_TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function isPrime(number) {
   if (number <= 1) {
     return false;
   }
 
-  const n = number / 2;
-  for (let i = 2; i < n; i += 1) {
+  const halfNumber = number / 2;
+  for (let i = 2; i < halfNumber; i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -25,6 +26,6 @@ function getQuestionAndAnswer() {
   return { question: number, answer };
 }
 
-export async function brainPrimeGame() {
-  await engine('Answer "yes" if given number is prime. Otherwise answer "no".', getQuestionAndAnswer);
+export async function prime() {
+  await engine(GAME_TITLE, getQuestionAndAnswer);
 }

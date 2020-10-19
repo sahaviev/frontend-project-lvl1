@@ -4,6 +4,7 @@ import { engine } from '../engine.js';
 
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 100;
+const GAME_TITLE = 'What is the result of the expression?';
 
 const MathFunctions = {
   '+': function (x, y) { return x + y; },
@@ -22,6 +23,6 @@ function getQuestionAndAnswer() {
   };
 }
 
-export async function brainCalcGame() {
-  await engine('What is the result of the expression?', getQuestionAndAnswer);
+export async function calc() {
+  await engine(GAME_TITLE, getQuestionAndAnswer);
 }

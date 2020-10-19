@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { brainEvenGame } from '../src/games/brain-even-game.js';
+import { even } from '../src/games/even.js';
 
-brainEvenGame()
+even()
   .catch((error) => {
     console.log('brain-even.js: something went wrong');
     console.error(error);

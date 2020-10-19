@@ -3,6 +3,7 @@ import { getRandomNumber } from '../utils.js';
 
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 100;
+const GAME_TITLE = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function isEven(number) {
   return number % 2 === 0;
@@ -14,6 +15,6 @@ function getQuestionAndAnswer() {
   return { question: number, answer };
 }
 
-export async function brainEvenGame() {
-  await engine('Answer "yes" if the number is even, otherwise answer "no".', getQuestionAndAnswer);
+export async function even() {
+  await engine(GAME_TITLE, getQuestionAndAnswer);
 }

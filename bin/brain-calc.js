@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { brainCalcGame } from '../src/games/brain-calc-game.js';
+import { calc } from '../src/games/calc.js';
 
-brainCalcGame()
+calc()
   .catch((error) => {
     console.log('brain-calc.js: something went wrong');
     console.error(error);

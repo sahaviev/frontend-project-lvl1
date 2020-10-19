@@ -1,7 +1,5 @@
 import promptly from 'promptly';
 
-import { greetings } from './cli.js';
-
 export const Answer = {
   YES: 'yes',
   NO: 'no',
@@ -10,7 +8,9 @@ export const Answer = {
 const MAX_QUESTIONS_COUNT = 3;
 
 export async function engine(title, getQuestionAndAnswer) {
-  const name = await greetings();
+  console.log('Welcome to the Brain Games!');
+  const name = await promptly.prompt('May I have your name?: ');
+  console.log(`Hello, ${name}!`);
 
   console.log(title);
 

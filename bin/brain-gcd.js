@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { brainGcdGame } from '../src/games/brain-gcd-game.js';
+import { gcd } from '../src/games/gcd.js';
 
-brainGcdGame()
+gcd()
   .catch((error) => {
     console.log('brain-gcd.js: something went wrong');
     console.error(error);

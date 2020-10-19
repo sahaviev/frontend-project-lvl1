@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { brainProgressionGame } from '../src/games/brain-progression-game.js';
+import { progression } from '../src/games/progression.js';
 
-brainProgressionGame()
+progression()
   .catch((error) => {
     console.log('brain-progression.js: something went wrong');
     console.error(error);
