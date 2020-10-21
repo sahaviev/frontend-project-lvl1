@@ -13,7 +13,7 @@ All that's needed to install _hexlet-brain-games-rail_ is to use npm to install 
 npm install -g hexlet-brain-games-rail
 ```
 
-## ASCIINEMA example of brain games
+## Example of brain games running with ASCIINEMA
 Brain even game suggest you determine if the number is even or not. Run:
 ```
 brain-even
