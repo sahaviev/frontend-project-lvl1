@@ -1,17 +1,17 @@
-import { engine, Answer } from '../engine.js';
+import { engine, possibleAnswers } from '../engine.js';
 import { getRandomNumber } from '../utils.js';
 
 const MIN_RANDOM_NUMBER = 1;
 const MAX_RANDOM_NUMBER = 1000;
-const GAME_TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const GAME_TITLE = `Answer "${possibleAnswers.YES}" if given number is prime. Otherwise answer "${possibleAnswers.NO}".`;
 
 function isPrime(number) {
   if (number <= 1) {
     return false;
   }
 
-  const halfNumber = number / 2;
-  for (let i = 2; i < halfNumber; i += 1) {
+  const maxDivisor = number / 2;
+  for (let i = 2; i < maxDivisor; i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -22,7 +22,7 @@ function isPrime(number) {
 
 function getQuestionAndAnswer() {
   const number = getRandomNumber(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
-  const answer = isPrime(number) ? Answer.YES : Answer.NO;
+  const answer = isPrime(number) ? possibleAnswers.YES : possibleAnswers.NO;
   return { question: number, answer };
 }
 

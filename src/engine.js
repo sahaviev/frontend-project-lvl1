@@ -1,6 +1,6 @@
 import promptly from 'promptly';
 
-export const Answer = {
+export const possibleAnswers = {
   YES: 'yes',
   NO: 'no',
 };
