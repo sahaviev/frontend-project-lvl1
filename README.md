@@ -13,15 +13,15 @@ All that's needed to install _hexlet-brain-games-rail_ is to use npm to install 
 npm install -g hexlet-brain-games-rail
 ```
 
-# ASCIINEMA example of brain games
-### brain-even
-Run:
+## ASCIINEMA example of brain games
+Brain even game suggest you determine if the number is even or not. Run:
 ```
 brain-even
 ```
 [![asciicast](https://asciinema.org/a/363307.svg)](https://asciinema.org/a/363307)
 
 ### brain-calc
+Brain calc game suggest you calculate random math operation for two random numbers. Run:
 Run:
 ```
 brain-calc
@@ -29,13 +29,14 @@ brain-calc
 [![asciicast](https://asciinema.org/a/363358.svg)](https://asciinema.org/a/363358)
 
 ### brain-gcd
-Run:
+Brain gcd game suggest you find greatest common delimiter for random number. Run:
 ```
 brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/363770.svg)](https://asciinema.org/a/363770)
 
 ### brain-progression
+Brain gcd game suggest you determine hidden number in progression. 
 Run:
 ```
 brain-progression
@@ -43,6 +44,7 @@ brain-progression
 [![asciicast](https://asciinema.org/a/363770.svg)](https://asciinema.org/a/363770)
 
 ### brain-prime
+Brain prime game suggest you determine if the number is prime or not.
 Run:
 ```
 brain-prime
